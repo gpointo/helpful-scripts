@@ -1,0 +1,72 @@
+project_name 
+project_address_ln_one 
+project_address_ln_two 
+project_city 
+project_state 
+project_zip_code 
+status_federal_aid_project_id
+department 
+group_name 
+type_name 
+scope_of_work 
+recovery_act_project 
+require_duns_number 
+require_work_orders 
+thirteen_ninty_one_order 
+dir_project_id 
+private double budget
+private double percent_complete
+revised_contract_amount 
+private int now_hire_days
+projected_hours 
+jurisdicitions 
+locations 
+hud_project 
+hud_federal_id 
+hud_program_code 
+hud_type_of_construction 
+private Date prevailing_wage_lockin_date
+private Date bid_advertisement_date
+private Date estimated_start_date
+private Date pre_bid_date
+private Date notice_to_proceed_date
+private Date pre_construction_date
+private Date pre_job_date
+private Date award_date
+sec_three_est_wrk_frc_mny_exp_tot_proj 
+sec_three_percent_goal 
+sec_three_oth_opp_doll 
+misc_sett_reimburs_rt_amnt 
+misc_set_spe_pla_proj 
+proj_con_lbr_cpml_wg_admn_nm 
+proj_con_phn_num 
+proj_con_email 
+proj_con_fax_num 
+goal_ass_ward 
+goal_ass_geo_area 
+goal_ass_congress_dis 
+goal_ass_sen_dis 
+goal_rep_app_per_goal 
+goal_rep_min_per_goal 
+goal_rep_wom_per_goal 
+eeo_rep_min_jrny_prsn_per_goal 
+eeo_rep_app_per_goal 
+eeo_rep_min_lab_per_goal 
+eeo_rep_econ_dis_goal 
+eeo_rep_ojt_goals_per 
+eeo_rep_fem_jrny_per_goal 
+eeo_rep_fem_app_per_gaol 
+eeo_rep_vet_goal 
+eeo_rep_disincentive_money 
+eeo_rep_com_hire_goal_per 
+eeo_rep_city_res_goal_per 
+eeo_rep_new_hiring_goal_per 
+eeo_rep_pre_app_goal 
+eeo_rep_div_goal_per 
+eeo_rep_com_hiring_goal_req 
+proj_lab_sum_rep_min_skill_goal_per 
+proj_lab_sum_rep_min_unskill_goal_per 
+proj_lab_sum_rep_app_hour_goal 
+proj_lab_sum_rep_min_hour_goal 
+proj_lab_sum_rep_fem_hour_goal 
+proj_lab_sum_rep_notes

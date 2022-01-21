@@ -1,0 +1,293 @@
+<app-header></app-header>
+<div class="col-12 x-padding-sm align">
+    <div class="title">Estimate Request Form</div>
+</div>
+<div class=" page-wrapper">
+    <form [formGroup]="formdata" (ngSubmit)="sendEmail(f) " #f="ngForm">
+        <fieldset>
+            <div class="col-12 x-padding-md">Please Use this form to submit a request. We will contact you at or as
+                close to your preferred time as possible.</div>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Name" formControlName='project_name' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Address Line 1" formControlName='project_address_ln_one'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Address Line 2" formControlName='project_address_ln_two'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project City" formControlName='project_city' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project State" formControlName='project_state' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Zip Code" formControlName='project_zip_code' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Status Federal-Aid Project ID"
+                    formControlName='status_federal_aid_project_id' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Department" formControlName='department' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Group Name" formControlName='group_name' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Type Name" formControlName='type_name' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Description / Scope of Work" formControlName='scope_of_work'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Recovery Act Project" formControlName='recovery_act_project'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Require DUNS Number" formControlName='require_duns_number'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Require Work Orders" formControlName='require_work_orders'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="1391 / 1392 Projects" formControlName='thirteen_ninty_one_order'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="DIR Project ID/ Local Registration Number" formControlName='dir_project_id'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Budget" formControlName='private double budget' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="PercentComplete" formControlName='private double percent_complete'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Revised Contract Number" formControlName='revised_contract_amount'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Now Hire Days" formControlName='private int now_hire_days'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Forcasted / Projected Hours" formControlName='projected_hours'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Jurisdictions" formControlName='jurisdicitions' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Locations" formControlName='locations' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="HUD Project" formControlName='hud_project' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="HUD Federal Identification" formControlName='hud_federal_id'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="HUD Program Name" formControlName='hud_program_code' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="HUD Program Code" formControlName='hud_type_of_construction'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="HUD Type of Construction"
+                    formControlName='private Date prevailing_wage_lockin_date' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Prevailing Wage Lock in Date"
+                    formControlName='private Date bid_advertisement_date' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Bid Advertising Date" formControlName='private Date estimated_start_date'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Estimated Start Date" formControlName='private Date pre_bid_date'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Pre Bid Date" formControlName='private Date notice_to_proceed_date'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Notice To Proceed Date"
+                    formControlName='private Date pre_construction_date' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Pre Construction Date" formControlName='private Date pre_job_date'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Pre Job Date" formControlName='private Date award_date'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Award Date" formControlName='sec_three_est_wrk_frc_mny_exp_tot_proj'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Section 3 Estimated Workforce $ to be Expended for total Project"
+                    formControlName='sec_three_percent_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Section 3 Percentage Goal" formControlName='sec_three_oth_opp_doll'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Section 3 Other Economic Opportunities in Dollars"
+                    formControlName='misc_sett_reimburs_rt_amnt' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Mics. Settings Reimbursement Rate Amount"
+                    formControlName='misc_set_spe_pla_proj' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Misc. Settings Specialized PLA Project"
+                    formControlName='proj_con_lbr_cpml_wg_admn_nm' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Contract Labor Compliance/ Prevailing Wage Administrator Name"
+                    formControlName='proj_con_phn_num' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Contact Phone Number" formControlName='proj_con_email'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Contact Email Addresse" formControlName='proj_con_fax_num'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Contact Fax Number" formControlName='goal_ass_ward'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Assigned Ward" formControlName='goal_ass_geo_area'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Assigned Geographic Areas" formControlName='goal_ass_congress_dis'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Assigned Congressional District" formControlName='goal_ass_sen_dis'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Assigned Senate District" formControlName='goal_rep_app_per_goal'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Report Apprentice Percentage Goal"
+                    formControlName='goal_rep_min_per_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Report Minority Percentage Goal"
+                    formControlName='goal_rep_wom_per_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Goal Report Women Percentage Goal"
+                    formControlName='eeo_rep_min_jrny_prsn_per_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Minority Journeyperson Percentage Goal"
+                    formControlName='eeo_rep_app_per_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Minority Apprentice Percentage Goal"
+                    formControlName='eeo_rep_min_lab_per_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Minority Labor Percentage Goal"
+                    formControlName='eeo_rep_econ_dis_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Economic Disadvantage Goal"
+                    formControlName='eeo_rep_ojt_goals_per' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report OJT Goals Percentage"
+                    formControlName='eeo_rep_fem_jrny_per_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Female Journey Person Percent Goal"
+                    formControlName='eeo_rep_fem_app_per_gaol' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Female Apprentice Percent Goal"
+                    formControlName='eeo_rep_vet_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Veteran Goal" formControlName='eeo_rep_disincentive_money'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Disincentive Money" formControlName='eeo_rep_com_hire_goal_per'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Community Hiring Goal Percentage"
+                    formControlName='eeo_rep_city_res_goal_per' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report New Hiring Goal Percentage"
+                    formControlName='eeo_rep_new_hiring_goal_per' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Pre-Apprentice Goal" formControlName='eeo_rep_pre_app_goal'
+                    (blur)='onTouched()'>
+            </mat-form-field>
+            <!--To do-->
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Report Diversity Goal Percentage"
+                    formControlName='eeo_rep_div_goal_per' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="EEO Reportis Community Hiring Goal a Requirement?"
+                    formControlName='eeo_rep_com_hiring_goal_req' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Labor Summary Report Minority Skilled Goal Percent"
+                    formControlName='proj_lab_sum_rep_min_skill_goal_per' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Labor Summary Report Minority Unskilled Goal Percentage"
+                    formControlName='proj_lab_sum_rep_min_unskill_goal_per' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Labor Summary Report Apprentice Hour Goals"
+                    formControlName='proj_lab_sum_rep_app_hour_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Labor Summary Report Minority Hourly Goals "
+                    formControlName='proj_lab_sum_rep_min_hour_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Labor Summary Report Female Hour Goals"
+                    formControlName='proj_lab_sum_rep_fem_hour_goal' (blur)='onTouched()'>
+            </mat-form-field>
+            <!--To do-->
+            <mat-form-field class="lg-input-padding col-4">
+                <input matInput placeholder="Project Labor Summary Report Notes"
+                    formControlName='proj_lab_sum_rep_notes' (blur)='onTouched()'>
+            </mat-form-field>
+            <button mat-raised-button class="btn-color" type="submit">
+                Submit
+            </button>
+        </fieldset>
+    </form>
+</div>
